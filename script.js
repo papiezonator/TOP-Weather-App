@@ -3,7 +3,9 @@ const getCity = async (value) => {
     const cityData = await city.json();
     console.log(cityData);
     console.log(cityData.resolvedAddress);
-        
+    console.log(cityData.days[0]);
+    console.log("Min temperature: " + cityData.days[0].tempmin);
+    console.log("Max temperature: " + cityData.days[0].tempmax);    
 }
 
 //getCity();
