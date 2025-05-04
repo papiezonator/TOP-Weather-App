@@ -1,12 +1,9 @@
-const getCity = async (city) => {
-    await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}?key=WCCWTNTGY4RXDEBU72MEBBS2E`)
-        .then(function(r){
-            console.log(r.json())
-            //console.log(r.json().days)
-        })
-        .catch(function(e){
-            console.log(e)
-        })
+const getCity = async (value) => {
+    const city = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${value}?key=WCCWTNTGY4RXDEBU72MEBBS2E`)
+    const cityData = await city.json();
+    console.log(cityData);
+    console.log(cityData.resolvedAddress);
+        
 }
 
 //getCity();
