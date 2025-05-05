@@ -10,10 +10,6 @@ const getCity = async (value) => {
 
 //getCity();
 
-() => {
-    console.log("dog");
-}
-
 const searchBtn = document.querySelector("#search");
 const searchBar = document.querySelector("#searchBar")
 
