@@ -12,7 +12,11 @@ const getCity = async (value) => {
 
 const searchBtn = document.querySelector("#search");
 const searchBar = document.querySelector("#searchBar")
+const form = document.querySelector("#form")
 
-searchBtn.addEventListener("click", () => {
+
+searchBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    //console.log(searchBar.value);    
     getCity(searchBar.value);
 })
