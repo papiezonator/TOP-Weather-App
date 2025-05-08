@@ -61,8 +61,20 @@ body{
 }
 
 #weather {
+    display: flex;
+    flex-direction: column;
+    
     border: 2px solid red;
-    height: 50vh;
+    height: 60vh;
     width: 50vh;
 }
 
+#top {
+    border: 2px solid yellow;
+    flex-grow: 1;
+}
+
+#bottom {
+    border: 2px solid purple;
+    flex-grow: 3;
+}
