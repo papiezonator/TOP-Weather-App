@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="wrapper">
@@ -14,11 +15,36 @@
                     <h2>Hello!</h2>
                 </div>
                 <div class="desc">
-                    <p>Please type the city you wish to check the weather of</p>
+                    <p>Search the city by using the field below</p>
+                    <input type="text" id="searchBar" required></input>
                 </div>
-                <input type="text" id="searchBar" required></input>
                 <button type="submit" id="search">Search</button>    
             </form>
+        </div>
+        <div id="weatherWrap">
+            <div id="weather">
+                <div id="top">
+                    <div class="weatherWrapper">
+                        <div class="currentTemp">
+                            37.5
+                        </div>
+                        <div class="cityName">
+                            Warsaw
+                        </div>
+                        <div class="weatherIcon">
+                            w/e
+                        </div>
+                    </div>
+                    <div class="hours">
+
+                    </div>
+                </div>
+                <div id="bottom">
+                    <div class="weatherWrapp">
+
+                    </div>
+                </div>         
+            </div>
         </div>
     </div>
 </body>
