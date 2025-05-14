@@ -74,16 +74,22 @@ body{
     border: 2px solid yellow;
     flex-grow: 2;
     display: grid;
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    /* overflow: hidden; */
 }
 
 #bottom {
     border: 2px solid purple;
     flex-grow: 3;
+}
+
+.currentTemp, .weatherIcon, .cityName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .currentTemp {
@@ -102,7 +108,24 @@ body{
 }
 
 .hours { 
+    display: flex;
     border: 2px solid magenta;
-    grid-area: 3 / 1 / 4 / 3; 
+    grid-area: 3 / 1 / 4 / 3;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+}
+
+.hours::-webkit-scrollbar{
+    display: none;
+}
+
+.hour {
+    border: 2px solid blue;
+    width: 7vh;
+    height: 10vh;
+    
 }
 
